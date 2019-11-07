@@ -105,6 +105,7 @@ func (this *NetWork) Collect() error {
 }
 
 func (this *NetWork) ResetIfiData() {
+	this.IfiMap = make(map[string]*Ifi)
 	this.RecvByteSum = 0
 	this.SendByteSum = 0
 
